@@ -1,0 +1,10 @@
+[Unit]
+Description=Run remove-downloads after boot
+
+[Timer]
+OnBootSec=15min
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
