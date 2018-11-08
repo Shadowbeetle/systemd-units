@@ -16,6 +16,8 @@ cd /etc/systemd/system/
 ln -sf $SOURCE_DIR/remove-downloads.timer remove-downloads.timer
 ln -sf $SOURCE_DIR/remove-downloads.service remove-downloads.service 
 cd $SOURCE_DIR
-systemctl enable remove-downloads.timer
-systemctl enable remove-downloads.service 
 systemctl daemon-reload
+systemctl enable remove-downloads.timer
+systemctl start remove-downloads.timer
+systemctl enable remove-downloads.service 
+systemctl start remove-downloads.service 
