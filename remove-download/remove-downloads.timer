@@ -2,7 +2,7 @@
 Description=Run remove-downloads after boot
 
 [Timer]
-OnBootSec=15min
+OnBootSec=1min
 OnCalendar=daily
 Persistent=true
 
