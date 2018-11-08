@@ -4,7 +4,6 @@ Description=Remove contents of ~/Downloads
 [Service]
 Type=oneshot
 ExecStart=/home/{{USER}}/Projects/src/github.com/Shadowbeetle/systemd-units/remove-downloads/remove-downloads.sh
-RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
