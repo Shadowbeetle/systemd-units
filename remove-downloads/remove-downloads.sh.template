@@ -1,0 +1,2 @@
+#!/:q
+rm -rf /home/{{USER}}/Downloads/*
