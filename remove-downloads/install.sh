@@ -13,7 +13,7 @@ SOURCE_DIR=$(pwd)
 sed "s/{{USER}}/$1/" remove-downloads.sh.template > remove-downloads.sh
 chmod +x remove-downloads.sh
 sed "s|{{PATH}}|$2|" remove-downloads.service.template > remove-downloads.service
-cd /etc/systemd/system/
+cd /usr/lib/systemd/system/
 ln -sf $SOURCE_DIR/remove-downloads.timer remove-downloads.timer
 ln -sf $SOURCE_DIR/remove-downloads.service remove-downloads.service 
 cd $SOURCE_DIR
